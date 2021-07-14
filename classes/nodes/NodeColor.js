@@ -2,7 +2,6 @@ import Node from './Node.js';
 const tinycolor = require("tinycolor2");
 var debounce = require('lodash.debounce');
 
-
 export default class NodeColor extends Node {
   constructor(className, graph, x, y, name, propertiesComponent, settings) {
     super(className, graph, x, y, name, propertiesComponent, settings);

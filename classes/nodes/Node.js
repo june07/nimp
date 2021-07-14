@@ -1,7 +1,9 @@
 import settings from '../../lib/settings.js';
 import functions from '../../lib/functions.js';
 var ObjectId = require('bson-objectid');
+import Jimp from 'jimp';
 
+global.Jimp = Jimp
 
 export default class Node {
   constructor(className, graph, x, y, title, propertiesComponent, nodeSettings) {

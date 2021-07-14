@@ -3,8 +3,6 @@ import OutputImage from './OutputImage.js';
 var debounce = require('lodash.debounce');
 import settings from '../../lib/settings.js';
 
-
-
 export default class NodeImage extends Node {
   constructor(className, graph, x, y, name, propertiesComponent, settings) {
     super(className, graph, x, y, name, propertiesComponent, settings);
