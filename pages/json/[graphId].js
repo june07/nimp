@@ -51,7 +51,9 @@ export default class Json extends React.Component {
             <meta key="og:title" property="og:title" content={this.props.graph.title+' - Nimp'} />
           </Head>
         )}
-        <JsonView user={this.props.user} graphToLoad={this.props.graph} />
+        {this.props.graph && (
+          <JsonView user={this.props.user} graphToLoad={this.props.graph} />
+        )}
       </MainLayout>
     )
   }
